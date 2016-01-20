@@ -1,0 +1,22 @@
+{
+  "name": "rev-bundlejs",
+  "version": "1.0.0",
+  "description": "Revision bundle.js file and update index.html with the revision'd file.",
+  "main": "index.js",
+  "bin": {
+    "rev-bundlejs": "rev-bundle.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudijs/rev-bundlejs.git"
+  },
+  "author": "Rudi Starcevic <ooly.me@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rudijs/rev-bundlejs/issues"
+  },
+  "homepage": "https://github.com/rudijs/rev-bundlejs#readme"
+}
