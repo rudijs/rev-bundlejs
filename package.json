@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Revision bundle.js file and update index.html with the revision'd file.",
   "main": "index.js",
+  "private": true,
   "bin": {
-    "rev-bundlejs": "rev-bundle.js"
+    "rev-bundlejs": "./bin/rev-bundlejs-cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

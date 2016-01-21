@@ -3,7 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 
-module.exports = data => {
+module.exports = (indexHtml, data) => {
+  const indexHtmlFile = indexHtml;
   const revData = data;
 
   // fs.readFile callback
@@ -12,10 +13,15 @@ module.exports = data => {
       throw err;
     }
 
-    const destIndexHtml = data.replace(revData.fileName, revData.revFileName);
+    const indexInnerHtml = data.replace(revData.fileName, revData.revFileName);
 
-    var wstream = fs.createWriteStream('./dist/index.html');
-    wstream.write(destIndexHtml);
+    var wstream = fs.createWriteStream(indexHtmlFile);
+
+    wstream.on('finish', function () {
+      console.log('==> rev-bundlejs: index.html has been updated.');
+    });
+
+    wstream.write(indexInnerHtml);
     wstream.end();
   }
 }
