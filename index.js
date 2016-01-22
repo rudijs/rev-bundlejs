@@ -9,7 +9,7 @@ const revFile = require('./src/rev_file');
 const writeIndexFile = require('./src/write_index_file');
 const writeRevManifest = require('./src/write_rev_manifest');
 
-const bundleJs = 'dist/bundle.js';
+const bundleJs = 'dist/assets/js/bundle.js';
 const indexHtml = 'dist/index.html';
 
 module.exports = () => {
