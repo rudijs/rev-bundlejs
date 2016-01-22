@@ -1,6 +1,6 @@
 {
   "name": "rev-bundlejs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Revision bundle.js file and update index.html with the revision'd file.",
   "main": "index.js",
   "private": true,
